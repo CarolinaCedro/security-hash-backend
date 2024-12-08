@@ -14,13 +14,11 @@ public class Arquivo {
     @UuidGenerator
     private String id;
 
-    private String nomeArquivo;        // Nome do arquivo
-    private String tipoArquivo;        // Tipo do arquivo, como "pdf", "txt", "docx", etc.
+    private String nomeArquivo;
+    private String tipoArquivo;
     @Lob
     @Column(name = "arquivo_original")
     private byte[] arquivoOriginal; // Arquivo em formato binário
-    // Arquivo original codificado em Base64
-
 
     public Arquivo(String id, String nomeArquivo, String tipoArquivo, byte[] arquivoOriginal) {
         this.id = id;

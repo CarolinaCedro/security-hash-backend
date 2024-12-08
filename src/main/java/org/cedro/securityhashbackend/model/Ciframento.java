@@ -12,10 +12,10 @@ public class Ciframento {
     @UuidGenerator
     private String id;
 
-    private String chaveAESBase64;     // A chave simétrica AES codificada em Base64
-    private String arquivoCifrado;     // Arquivo cifrado codificado em Base64
-    private String assinatura;         // Assinatura digital do arquivo (pode ser Base64)
-    private String tipoArquivo;        // Tipo do arquivo original, por exemplo, PDF, DOCX, etc.
+    private String chaveAESBase64;     //Base64
+    private String arquivoCifrado;     //Base64
+    private String assinatura;         //Base64
+    private String tipoArquivo;         //Base64
 
 
     public Ciframento(String id, String chaveAESBase64, String arquivoCifrado, String assinatura, String tipoArquivo) {

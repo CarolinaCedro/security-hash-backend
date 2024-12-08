@@ -66,12 +66,4 @@ public class ChaveAES {
         return Base64.getEncoder().encodeToString(dadosCifrados);
     }
 
-    public SecretKey decodeBase64Key() {
-        // Decodificando a chave base64 para byte[]
-        byte[] decodedKey = Base64.getDecoder().decode(this.chaveBase64);
-
-        // Recuperando a chave AES a partir do byte[]
-        SecretKey secretKey = new javax.crypto.spec.SecretKeySpec(decodedKey, 0, decodedKey.length, "AES");
-        return secretKey;
-    }
 }

@@ -18,7 +18,7 @@ public class Empacotamento {
 
     private String nomeArquivo;
 
-    @Lob // Define que o campo é um grande objeto binário
+    @Lob
     private File conteudo;
 
     private LocalDateTime dataCriacao;

@@ -19,7 +19,7 @@ public class ArquivoCifrado {
     private String tipoArquivo;
     private String nomeArquivo;
     @Column(name = "chaveAESId", length = 5000)
-    private SecretKey chaveAESId;  // ID ou referência da chave AES usada para cifrar o arquivo
+    private SecretKey chaveAESId;
 
     @ManyToOne
     @JoinColumn(name = "chave_aes_id", referencedColumnName = "id", insertable = false, updatable = false)
