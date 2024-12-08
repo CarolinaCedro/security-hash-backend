@@ -53,11 +53,6 @@ public class ChaveController {
     }
 
 
-//    @GetMapping("/private")
-//    public ResponseEntity<List<Chave>> privateKey() {
-//        return ResponseEntity.ok(chaveRepository.findByTipo("privada"));
-//    }
-
     @PostMapping()
     public ResponseEntity<Chave> salvarChave(@RequestBody Chave chave) {
         return ResponseEntity.ok(this.chaveRepository.save(chave));
