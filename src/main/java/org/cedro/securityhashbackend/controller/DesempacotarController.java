@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.Signature;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -87,22 +88,6 @@ public class DesempacotarController {
             }
             byte[] arquivoOriginal = descriptografarArquivo(arquivoCifrado, chaveSimetrica);
             System.out.println("Arquivo descriptografado com sucesso.");
-
-            // Etapa 6: Verificar a assinatura
-//            byte[] assinatura = conteudoArquivos.get("assinatura");
-//            if (assinatura == null) {
-//                System.out.println("Assinatura digital não encontrada no empacotamento.");
-//                return ResponseEntity.badRequest().body("Assinatura digital não encontrada no empacotamento!");
-//            }
-//
-//            boolean assinaturaValida = verificarAssinatura(arquivoOriginal, assinatura, publicKey);
-//            if (!assinaturaValida) {
-//                System.out.println("Assinatura digital inválida!");
-//                // Exiba o conteúdo do arquivo original e da assinatura para ajudar a depurar
-//                System.out.println("Arquivo original: " + Arrays.toString(arquivoOriginal));
-//                System.out.println("Assinatura: " + Arrays.toString(assinatura));
-//                return ResponseEntity.badRequest().body("A assinatura digital é inválida!");
-//            }
 
 
             // Sucesso
